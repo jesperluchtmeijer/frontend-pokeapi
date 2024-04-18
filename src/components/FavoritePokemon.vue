@@ -52,6 +52,7 @@ export default {
     <ul>
       <li v-for="pokemon in favorite" :key="pokemon.id">
         {{ pokemon.id }}
+        {{ pokemon.name }}
         <button @click="remove(pokemon.id)">Remove favorite</button>
       </li>
     </ul>

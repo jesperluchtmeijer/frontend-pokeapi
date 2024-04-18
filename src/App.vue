@@ -1,23 +1,23 @@
-<script>
-import axios from 'axios';
-</script>
-
 <template>
-  <div class="w-1/2 mx-auto">
-      <div class="">
-      <h1>Pokémon</h1>
-      <p>Gotta catch them all!</p>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/pokemon">Pokemon</router-link> |
-      <router-link to="/favorite">Favorite</router-link> |
-      <router-link to="/login">Login</router-link> |
-      <router-link to="/register">Register</router-link>
-      <router-view></router-view>
+  <div class="bg-gray-800 text-white">
+    <div class="container mx-auto px-4 py-6 flex items-center justify-between">
+      <h1 class="text-2xl font-bold">Pokémon</h1>
+      <div class="flex space-x-4">
+        <router-link class="text-gray-300 hover:text-white" to="/">Home</router-link>
+        <router-link class="text-gray-300 hover:text-white" to="/pokemon">Pokemon</router-link>
+        <router-link class="text-gray-300 hover:text-white" to="/favorite">Favorite</router-link>
+        <router-link class="text-gray-300 hover:text-white" to="/login">Login</router-link>
+        <router-link class="text-gray-300 hover:text-white" to="/register">Register</router-link>
+        <router-link class="text-gray-300 hover:text-white" to="/chat">Chat</router-link>
       </div>
+    </div>
   </div>
+  <router-view></router-view>
 </template>
 
-<style scoped>
+<script>
 
-
-</style>
+export default {
+  name: "App",
+};
+</script>
